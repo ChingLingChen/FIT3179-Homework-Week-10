@@ -7,8 +7,8 @@
     "anchor": "middle",
     "align": "center"
   },
-  "width": 700,
-  "height": 600,
+  "width": 600,
+  "height": 500,
   "params": [
     {
       "name": "year_month_select",
@@ -123,7 +123,7 @@
           "field": "average_temperature",
           "type": "quantitative",
           "scale": { "scheme": "reds", "domain": [20, 34] },
-          "legend": { "title": "Temperature (°C)" }
+          "legend": { "title": "Temperature(°C)" }
         },
         "tooltip": [
           { "field": "state", "title": "State" },
