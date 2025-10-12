@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 40px;
   background-color: #f9f9f9;
-  color: #333; /* ✅ 全局文字顏色 */
+  color: #333; 
 }
 
 header {
@@ -19,7 +19,7 @@ h1 {
 
 .dashboard {
   display: flex;
-  flex-direction: row-reverse; /* ✅ 地圖在右，annotation 在左 */
+  flex-direction: row-reverse; 
   gap: 40px;
   justify-content: center;
   align-items: flex-start;
