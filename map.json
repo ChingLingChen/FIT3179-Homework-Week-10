@@ -3,11 +3,11 @@
   "title": {
     "text": "Hourly Temperature by Malaysian State",
     "font": "serif",
-    "fontSize": 30,
+    "fontSize": 20,
     "anchor": "middle",
     "align": "center"
   },
-  "width": 500,
+  "width": 600,
   "height": 400,
   "params": [
     {
@@ -39,7 +39,7 @@
     },
     {
       "name": "zoom_level",
-      "value": 2200,
+      "value": 1400,
       "bind": {
         "input": "range",
         "min": 500,
