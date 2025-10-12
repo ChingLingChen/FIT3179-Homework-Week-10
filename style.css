@@ -17,10 +17,10 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* ✅ 使用 Grid 排版 */
+/* ✅ 使用 Grid 排版，讓地圖和文字穩定並排 */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr; /* 左側 annotation，右側地圖 */
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -35,6 +35,7 @@ h1 {
 
 .map-area {
   max-width: 800px;
+  width: 100%;
 }
 
 #map {
@@ -43,12 +44,12 @@ h1 {
 
 /* ✅ 顏色標示 */
 .cooler {
-  color: #fbb4b4;
+  color: #fbb4b4; /* 淡紅色 */
   font-weight: bold;
 }
 
 .hotter {
-  color: #990000;
+  color: #990000; /* 深紅色 */
   font-weight: bold;
 }
 
