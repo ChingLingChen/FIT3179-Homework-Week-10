@@ -30,7 +30,8 @@ h1 {
 
 .map-area {
   flex: 2;
-  max-width: 900px;
+  max-width: 800px; /* ✅ 限制地圖最大寬度 */
+  min-width: 600px;
 }
 
 #map {
@@ -39,7 +40,7 @@ h1 {
 
 .annotation {
   flex: 1;
-  max-width: 280px;
+  max-width: 300px;
   font-size: 16px;
   line-height: 1.6;
   word-break: break-word;
@@ -55,7 +56,7 @@ h1 {
   font-weight: bold;
 }
 
-/* 響應式排版：手機或小螢幕自動換行 */
+/* ✅ 響應式排版：小螢幕自動換行 */
 @media screen and (max-width: 1000px) {
   .dashboard {
     flex-direction: column;
