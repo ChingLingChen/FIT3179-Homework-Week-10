@@ -16,20 +16,21 @@ h1 {
   margin-bottom: 10px;
 }
 
-.description-box {
-  max-width: 700px;
+.description {
+  max-width: 900px;
   margin: 0 auto 40px auto;
+  text-align: center;
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-  text-align: center; 
 }
 
 main {
-  display: block; 
+  width: 100%;
 }
 
 #map {
-  width: 700px;
-  margin-left: 0; 
+  width: 900px;
+  margin-left: 0;
+  margin-right: auto;
 }
