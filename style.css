@@ -17,20 +17,14 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* ✅ 使用 Grid 排版，讓地圖和文字穩定並排 */
+/* ✅ Grid 排版：左地圖、右 annotation */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* 左側 annotation，右側地圖 */
+  grid-template-columns: 2fr 1fr;
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: start;
-}
-
-.annotation {
-  font-size: 16px;
-  line-height: 1.6;
-  word-break: break-word;
+  align-items: center; /* ✅ 垂直置中對齊 */
 }
 
 .map-area {
@@ -42,18 +36,24 @@ h1 {
   width: 100%;
 }
 
+.annotation {
+  font-size: 16px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
 /* ✅ 顏色標示 */
 .cooler {
-  color: #fbb4b4; /* 淡紅色 */
+  color: #fbb4b4;
   font-weight: bold;
 }
 
 .hotter {
-  color: #990000; /* 深紅色 */
+  color: #990000;
   font-weight: bold;
 }
 
-/* ✅ 響應式：小螢幕自動換行 */
+/* ✅ 響應式排版：小螢幕自動換行 */
 @media screen and (max-width: 1000px) {
   .dashboard-grid {
     grid-template-columns: 1fr;
@@ -61,7 +61,7 @@ h1 {
 
   .annotation {
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .map-area {
