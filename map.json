@@ -7,8 +7,8 @@
     "anchor": "middle",
     "align": "center"
   },
-  "width": 600,
-  "height": 400,
+  "width": 700,
+  "height": 600,
   "params": [
     {
       "name": "year_month_select",
@@ -123,11 +123,11 @@
           "field": "average_temperature",
           "type": "quantitative",
           "scale": { "scheme": "reds", "domain": [20, 34] },
-          "legend": { "title": "Average Temperature (°C)" }
+          "legend": { "title": "Temperature (°C)" }
         },
         "tooltip": [
           { "field": "state", "title": "State" },
-          { "field": "average_temperature", "title": "Average Temperature (°C)", "format": ".1f" },
+          { "field": "average_temperature", "title": "Temperature (°C)", "format": ".1f" },
           { "field": "time", "title": "Time" }
         ]
       }
