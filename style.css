@@ -24,7 +24,7 @@ h1 {
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: center; /* ✅ 垂直置中對齊 */
+  align-items: start; /* 避免地圖把文字擠下去 */
 }
 
 .map-area {
@@ -32,17 +32,32 @@ h1 {
   width: 100%;
 }
 
+/* ✅ 修正 Vega Embed 尺寸導致擋住文字的問題 */
 #map {
   width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
+.vega-embed {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.vega-embed svg,
+.vega-embed canvas {
+  max-width: 100%;
+  height: auto !important;
+  display: block;
+}
+
+/* 說明區域 */
 .annotation {
   font-size: 16px;
   line-height: 1.6;
   word-break: break-word;
 }
 
-/* ✅ 顏色標示 */
 .cooler {
   color: #fbb4b4;
   font-weight: bold;
@@ -53,7 +68,7 @@ h1 {
   font-weight: bold;
 }
 
-/* ✅ 響應式排版：小螢幕自動換行 */
+/* ✅ 響應式排版：小螢幕換行 */
 @media screen and (max-width: 1000px) {
   .dashboard-grid {
     grid-template-columns: 1fr;
