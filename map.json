@@ -7,8 +7,8 @@
     "anchor": "middle",
     "align": "center"
   },
-  "width": 500,
-  "height": 500,
+  "width": 400,
+  "height": 300,
   "params": [
     {
       "name": "year_month_select",
