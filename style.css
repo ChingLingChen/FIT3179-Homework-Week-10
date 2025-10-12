@@ -17,26 +17,33 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* ✅ 使用 Grid 排版：左地圖、右 annotation */
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+/* ✅ 使用 Flex 排版，地圖左、annotation 右 */
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* ✅ 垂直置中 */
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: center; /* ✅ 垂直置中對齊 */
 }
 
+/* ✅ 地圖區塊限制寬度 */
 .map-area {
-  max-width: 800px;
-  width: 100%;
+  flex: 2;
+  max-width: 700px;
+  min-width: 600px;
+  overflow: hidden;
 }
 
 #map {
   width: 100%;
 }
 
+/* ✅ annotation 區塊限制寬度並垂直置中 */
 .annotation {
+  flex: 1;
+  max-width: 300px;
   font-size: 16px;
   line-height: 1.6;
   word-break: break-word;
@@ -55,8 +62,9 @@ h1 {
 
 /* ✅ 響應式排版：小螢幕自動換行 */
 @media screen and (max-width: 1000px) {
-  .dashboard-grid {
-    grid-template-columns: 1fr;
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
   }
 
   .annotation {
