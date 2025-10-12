@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Malaysia Weather</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Vega Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  <script src="vega_lite_vis.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -21,11 +24,14 @@
 
     <div class="annotation">
       <p>This map shows hourly temperature across Malaysian states. Use the dropdown menus to filter by year, month, day, and hour.</p>
-      <p>You can zoom and re-center the map using the controls. The color scale indicates temperature intensity from 
-        <span class="cooler">cooler</span> (light red) to <span class="hotter">hotter</span> (dark red).
+      <p>The color scale indicates temperature intensity from 
+        <span class="cooler">cooler</span> (light red) to 
+        <span class="hotter">hotter</span> (dark red).
       </p>
       <p>Explore different time points to observe regional variations and weather patterns.</p>
     </div>
   </main>
+
+  <script src="vega_lite_vis.js"></script>
 </body>
 </html>
