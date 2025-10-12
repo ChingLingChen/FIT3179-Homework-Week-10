@@ -7,7 +7,7 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -16,9 +16,9 @@ h1 {
   margin-bottom: 10px;
 }
 
-.annotation {
+.description-box {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
   font-family: serif;
   font-size: 16px;
   line-height: 1.6;
