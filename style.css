@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 40px;
   background-color: #f9f9f9;
+  color: #333; /* ✅ 全局文字顏色 */
 }
 
 header {
@@ -18,7 +19,7 @@ h1 {
 
 .dashboard {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse; /* ✅ 地圖在右，annotation 在左 */
   gap: 40px;
   justify-content: center;
   align-items: flex-start;
@@ -39,15 +40,14 @@ h1 {
   max-width: 300px;
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
 }
 
 .cooler {
-  color: #fbb4b4; /* 淡紅色 */
+  color: #fbb4b4;
   font-weight: bold;
 }
 
 .hotter {
-  color: #990000; /* 深紅色 */
+  color: #990000; 
   font-weight: bold;
 }
